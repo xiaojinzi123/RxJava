@@ -15,4 +15,9 @@ class DataType {
      */
     var type: String? = null;
 
+    /**
+     * 用于显示的名称,在动画的时候
+     */
+    var shortChar:Char = 'O';
+
 }

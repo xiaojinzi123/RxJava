@@ -8,10 +8,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/LibTools" />
             <option value="$PROJECT_DIR$/ModuleBase" />
             <option value="$PROJECT_DIR$/ModuleBean" />
             <option value="$PROJECT_DIR$/ModuleMain" />
             <option value="$PROJECT_DIR$/ModuleObservable" />
+            <option value="$PROJECT_DIR$/ModuleResource" />
             <option value="$PROJECT_DIR$/ModuleSignal" />
             <option value="$PROJECT_DIR$/ModuleWelcome" />
             <option value="$PROJECT_DIR$/app" />

@@ -3,7 +3,11 @@
         package="com.xiaojinzi.rxjava.observable">
 
     <application>
-        <activity android:name=".create.view.ObservableCreateAct"></activity>
+        <meta-data
+                android:name="HOST_observable"
+                android:value="observable" />
+
+        <activity android:name=".create.view.ObservableCreateAct" />
         <activity android:name=".run.view.RunObservableAct" />
     </application>
 
