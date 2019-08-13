@@ -31,11 +31,13 @@ android {
 dependencies {
     api project(path: ':ModuleBean')
     api project(path: ':ModuleResource')
+    api project(path: ':ModuleUI')
     api project(path: ':LibTools')
     api libs.kotlin_stdlib_jdk7
     api libs.rxjava
     api libs.rxandroid
     api libs.appcompat
+    api libs.lifecycle_extensions
     api libs.core_ktx
     api libs.constraintlayout
     api libs.component_impl_rx

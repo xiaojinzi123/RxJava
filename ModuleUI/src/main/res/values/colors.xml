@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ui_theme">#98D373</color>
+    <color name="ui_colorPrimaryDark">#00574B</color>
+    <color name="ui_colorAccent">#D81B60</color>
+
+    <!--整个项目的主风格-->
+    <color name="ui_primary">#98D373</color>
+    <!--整个项目的不可用的时候的风格-->
+    <color name="ui_disabled">#EFD4D4</color>
+
+    <color name="ui_button_primary">@color/ui_primary</color>
+    <color name="ui_button_disabled">@color/ui_disabled</color>
+
+</resources>

@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
@@ -18,25 +17,27 @@ import com.xiaojinzi.rxjava.bean.Signal;
  * 2.展示一个时间线展示所有的信号
  * 3.支持用户手动拖拽每一个信号来设置信号的发射时间点
  */
-public class ObservableWidget extends ViewGroup {
+public class ObservableCreateWidget extends ViewGroup {
 
-    public ObservableWidget(Context context) {
+    public ObservableCreateWidget(Context context) {
         this(context, null);
     }
 
-    public ObservableWidget(Context context, @Nullable AttributeSet attrs) {
+    public ObservableCreateWidget(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public ObservableWidget(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public ObservableCreateWidget(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         paintForSignal.setColor(Signal.Companion.getSIGNAL_COLOR_NORMAL());
         paint.setColor(Color.BLACK);
         paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(5);
+        paint.setStrokeWidth(3);
     }
 
     private Paint paint = new Paint();
+
+    private int signalRadius = 26;
 
     private Paint paintForSignal = new Paint();
 
@@ -48,9 +49,9 @@ public class ObservableWidget extends ViewGroup {
         c.drawLine(getWidth() - 40, getHeight() / 2 + 40, getWidth(), getHeight() / 2, paint);
         c.drawLine(getWidth() - 60, getHeight() / 2 - 40, getWidth() - 60, getHeight() / 2 + 40, paint);
         c.drawLine(0, getHeight() / 2, getWidth(), getHeight() / 2, paint);
-        c.drawCircle(getWidth() / 2, getHeight() / 2, 30, paintForSignal);
-        c.drawCircle(getWidth() / 2 - 100, getHeight() / 2, 30, paintForSignal);
-        c.drawCircle(getWidth() / 2 + 300, getHeight() / 2, 30, paintForSignal);
+        c.drawCircle(getWidth() / 2, getHeight() / 2, signalRadius, paintForSignal);
+        c.drawCircle(getWidth() / 2 - 100, getHeight() / 2, signalRadius, paintForSignal);
+        c.drawCircle(getWidth() / 2 + 300, getHeight() / 2, signalRadius, paintForSignal);
 
     }
 

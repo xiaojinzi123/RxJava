@@ -12,6 +12,8 @@ ext.versions = [
 ]
 
 ext.libs = [
+        annotation          : 'androidx.annotation:annotation:1.1.0',
+        lifecycle_extensions: 'androidx.lifecycle:lifecycle-extensions:2.0.0',
         kotlin_stdlib_jdk7  : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin_version}",
         appcompat           : "androidx.appcompat:appcompat:1.0.2",
         constraintlayout    : "androidx.constraintlayout:constraintlayout:1.1.3",

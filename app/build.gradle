@@ -32,6 +32,7 @@ dependencies {
     implementation project(':ModuleMain')
     implementation project(':ModuleObservable')
     implementation project(':ModuleSignal')
+    implementation project(':ModuleDataType')
     api project(':ModuleBase')
     kapt libs.component_compiler
 }

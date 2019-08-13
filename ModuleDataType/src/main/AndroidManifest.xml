@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.xiaojinzi.rxjava.datatype">
+
+    <application>
+        <meta-data
+                android:name="HOST_dataType"
+                android:value="dataType" />
+        <activity android:name=".list.view.DataTypeListAct" />
+    </application>
+
+</manifest>

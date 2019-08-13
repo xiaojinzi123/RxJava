@@ -1,2 +1,2 @@
-include ':app', ':ModuleWelcome', ':ModuleBase', ':ModuleObservable', ':ModuleMain', ':ModuleSignal', ':ModuleBean', ':ModuleResource', ':LibTools'
+include ':app', ':ModuleWelcome', ':ModuleBase', ':ModuleObservable', ':ModuleMain', ':ModuleSignal', ':ModuleBean', ':ModuleResource', ':LibTools', ':ModuleDataType', ':ModuleUI'
 rootProject.name='RxJava'
