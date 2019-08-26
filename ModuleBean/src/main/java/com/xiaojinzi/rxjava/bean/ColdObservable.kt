@@ -25,4 +25,7 @@ open abstract class ColdObservable : Observable {
         this.signals = signals
     }
 
+    override val isHot: Boolean
+        get() = false;
+
 }
